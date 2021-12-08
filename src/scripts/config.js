@@ -1,6 +1,6 @@
 const Config = {
-    ROSBRIDGE_SERVER_IP: "10.0.2.15",
-    ROSBRIDGE_SERVER_PORT: "9090",
+    ROSBRIDGE_SERVER_IP: "4.tcp.ngrok.io",
+    ROSBRIDGE_SERVER_PORT: "13516",
     RECONNECTION_TIMER: "5000",
     CMD_VEL_TOPIC: "/cmd_vel",
     CMD_MESSAGE_TYPE: "geometry_msgs\Twist",
