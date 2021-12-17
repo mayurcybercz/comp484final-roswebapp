@@ -5,14 +5,9 @@ class Header extends Component {
         return(
         <Container>
             <Navbar bg="dark" variant = "dark" expand="lg" collapseOnSelect>
-            <Navbar.Brand href="#home">Ros Robot</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="me-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/About">About</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
+            <Navbar.Brand href="http://robotwebtools.org/">Robot Web Tools </Navbar.Brand>
+            <Navbar.Brand href="http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality"> Rosjs Intro</Navbar.Brand>
+
             </Navbar>
         </Container>);
         
