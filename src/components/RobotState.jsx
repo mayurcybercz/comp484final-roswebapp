@@ -110,7 +110,7 @@ class RobotState extends Component {
 
     render() {
         return (
-            <div>
+            <div  style= { { marginTop: 30 + "px"} } >
                 <Row>
                     <Col>
                         <h4 className="mt-4">Position</h4>

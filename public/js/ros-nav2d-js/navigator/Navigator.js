@@ -79,7 +79,7 @@ NAV2D.Navigator = function (options) {
           size: 15,
           strokeSize: 1,
           fillColor: createjs.Graphics.getRGB(120, 120, 255, 0.66),
-          pulse: true,
+          pulse: false,
         });
         
       }
@@ -94,7 +94,7 @@ NAV2D.Navigator = function (options) {
     that.goalMarker.scaleY = 1.0 / stage.scaleY;
 
     goal.on("result", function () {
-      //that.rootObject.removeChild(that.goalMarker);
+      that.rootObject.removeChild(that.goalMarker);
     });
   }
 

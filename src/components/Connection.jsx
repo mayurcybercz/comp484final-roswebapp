@@ -13,7 +13,7 @@ class Connection extends Component {
     }
 
     init_connection(){
-        //needs to windows since we are not importing it from the web
+        //using window to have access to any script in the source code
         this.state.ros = new window.ROSLIB.Ros();
         console.log(this.state.ros);
         

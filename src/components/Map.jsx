@@ -50,8 +50,8 @@ class Map extends Component {
         //creates a 2d map to display to the webi
         var viewer = new window.ROS2D.Viewer({
             divID: "map",
-            width: 640,
-            height: 480,
+            width: 1060,
+            height: 680,
             
         });
       

@@ -5,7 +5,7 @@ class Footer extends Component {
     render(){
         return( 
             <Container className="text-center">
-                <p>&copy; Group 3</p>
+                <p>&copy; COMP 484 - Group 3</p>
             </Container>
         );
     }
