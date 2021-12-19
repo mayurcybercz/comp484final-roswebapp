@@ -94,7 +94,7 @@ NAV2D.Navigator = function (options) {
     that.goalMarker.scaleY = 1.0 / stage.scaleY;
 
     goal.on("result", function () {
-      that.rootObject.removeChild(that.goalMarker);
+      //that.rootObject.removeChild(that.goalMarker);
     });
   }
 
