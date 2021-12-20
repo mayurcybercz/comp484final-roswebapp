@@ -4,7 +4,6 @@ import Teleoperation from "./Teleoperation";
 import{Row, Col, Container } from "react-bootstrap";
 import RobotState from "./RobotState";
 import Map from "./Map";
-import SpeechCommand from "./SpeechCommand";
 
 class Home extends Component {
     //state alllows to us to update the webui values
@@ -30,7 +29,6 @@ class Home extends Component {
                     <Row>    
                         <Col>
                             <RobotState/>
-                            <SpeechCommand/>
                         </Col>
                         <Col>
                             <h1>MAP</h1>
