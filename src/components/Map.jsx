@@ -16,10 +16,10 @@ class Map extends Component {
     }
 
     init_connection(){
-        //we need to use window  since we are not importing it from the web
+        //we need to use window since we are not importing it from the web
         this.state.ros = new window.ROSLIB.Ros();
         
-        //ensure we are connected to the local machine through websocket
+        //ensure we are receiving the odometry data from the local machine through websockets
         try { 
             this.state.ros.connect(
                 "ws://" +
@@ -75,17 +75,10 @@ class Map extends Component {
 
         });
 
-
+        //it zooms into the map even further
         var zoomView = new window.ROS2D.ZoomView({
             rootObject: viewer.scene,
         });
-
-        // //scaling the map to fit in the whole canvas
-        // mapClient.on('change', function(){
-        //     viewer.scaleToDimensions(mapClient.currentGrid.width, mapClient.currentGrid.height);
-        //     viewer.shift(mapClient.currentGrid.pose.position.x, mapClient.currentGrid.pose.position.y);
-        // });
-
     }
 
     render() {
